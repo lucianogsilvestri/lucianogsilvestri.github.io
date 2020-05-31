@@ -1,63 +1,295 @@
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link type="text/css" rel="stylesheet" href="css/body_2.css"/>
-<title>Luciano G. Silvestri</title>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Research-LGS</title>
+        <!-- Academicons-->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+              rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+              rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Research</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-capitalize text-white font-weight-bold">Research</h1>
+                    <hr class="divider my-4" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 font-weight-light mb-5">
+                        PostDoc. Computational Physics.
+                    </p>
+                    <!--- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Research Interests -->
+    <section class="page-section" id="overview">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-dark mt-0">Research Interests</h2>
+                    <hr class="divider light my-4" />
+                    <p class="text-dark-50 mb-4"> My current research interests lie in the dynamics
+                        of Strongly Coupled Plasmas (SCPs), i.e. systems whose dynamics is governed
+                        by particle correlations rather than their free motion. To be precise, the coupling parameter,
+                        denoted by \( \Gamma \), is defined as the ratio of average potential energy,
+                        \( \propto e^2(N/V)^{1/3} \), over the kinetic energy, \( k_BT \).
+                        Some examples of SCPs are the core of white dwarfs, the outer crust and ocean of neutron stars,
+                        and the center of giant planets.
+                        The large densities and relatively low temperatures of these systems lead to
+                        \( \Gamma \gg 1 \). At the same time we can create SCPs also in the laboratory.
+                        Trapped Ions at ultracold temperatures (Ultracold Neutral Plasmas, UNPs)
+                        and Complex "Dusty" Plasmas are some examples. The large \( \Gamma \)
+                        is due to the very low temperatures in the case of UNPs or due to the large charge carried
+                        by the dust particles in the latter case.</p>
+                    <p> On the theoretical side these systems are modeled as One component Plasmas (OCPs) where the role of the negative electrons is reduced to providing a neutralizing background. SCPs found in the Universe, however, are instead composed of multiple species of positively charged ions immersed in a neutralizing background. There are, however situations of physical importance, where the OCP description is inadequate and a genuine two component description of a plasma composed of electrons and ions is required. Within the simple time honored cold plasma and Vlasov plasma models there is an abundance of works on such systems in the literature. A more sophisticated approach on correlated electron-ion systems has been followed in recent works, especially in relation to the so-called Warm Dense Matter. Furthermore, in a large class of physical systems multicomponent behavior arises because there are two or more components of like charges (all the \( Z_A \)-s being of the same signature) in a neutralizing background, whose behavior is not well described in terms of an extended OCP-like or YOCP-like model. Such systems exhibit novel physical effects, which have no equivalent in OCP or YOCP systems.</p>
+                    <h3>Dynamical Structure Factor of One Component Plasma (OCP) Revisited </h3>
+                    <p>Even though my thesis project focused on plasma mixtures, I was also involved in different projects on the OCP. The fast computational resources of today allowed us to create a large set of simulations of the OCP and thus expand on the pioneering work of previous researchers. In Ref.~\cite{Korolov2015} we presented high precision MD simulations for the dynamical structure function, \( S(k,\omega) \), of the classical Coulomb OCP, for a wide range of the coupling parameter. We showed the positive-to-negative transition of the slope of the \( \omega(k) \) dispersion curve at small wave numbers caused by the onset of correlations with increasing coupling. The high signal-to-noise ratio of the data over several orders of magnitude allowed examination of a wide dynamical range of \( S(k,\omega) \), including extreme values of \( \omega \) and \( k \), and the identification of waves at higher harmonics of the plasma frequency.</p>
+                    <h3>Correlation Induced Second Plasmon in an Electron Liquid</h3>
+                    <p>A particular interesting project that emerged from my thesis was to apply the extended QLCA to a strongly coupled electron liquid. This system can be considered to be composed by two components with different spins, but equal charge and mass. In addition to the well known high frequency plasmon mode, such a binary system, in the strongly coupled phase, supports a second plasmon mode at a low non-zero frequency. This excitation is maintained by the out-of-phase oscillations of the spin-up and spin-down densities of the electron liquid, but governed solely by the Coulomb interaction between the particles. The frequency square of this mode is proportional to the overlap \( (r=0 ) \) (absolute) value of the spin-up/spin-down correlation function, and thus slightly affected by the degree of polarization of the electron liquid. From its dispersion and its satisfaction of the 3rd frequency sum rule we identified it with the conjectured magnetic excitation in the homogeneous electron gas. We estimated the spectral weight of the mode, based on the assumption that interspecies viscous spin drag is the main mechanism for damping in the strongly coupled domain. The spectral weight is manifest in the partial spin-resolved dynamical structure functions and it is proportional to the product of the densities of the two spin components. An independent derivation based on a generalized Feynman ansatz was used to corroborate our result.</p>
+                    <h3>Yukawa One Component Plasma</h3>
+                    <p>The work on OCP has also been extended to a Yukawa OCP (YOCP). The defining parameters of the YOCP are the inverse screening length, \( \kappa \), and coupling parameter \( \Gamma \). The YOCP collective mode spectrum is characterized by an acoustic mode with a linear dispersion at long wavelength, \( \omega(k) \propto sk \), \( s \) the sound speed. This work aimed at describing the behavior of the sound speed and damping of the oscillations across a wide range of parameter regimes: from a weakly coupled Coulomb gas to a crystalline phase. A major result of this work was the identification of five different domains in the \( \Gamma - \kappa \) parameter space in which the physical behavior of the YOCP exhibits different features. In the weak coupling regime, \( \Gamma \lt 1 \), a third parameter  \( w \) -- the ratio between the wave's phase velocity and the thermal speed of the particles -- divides the phase space in two: for \( w \lt 1 \) the thermal motion of the particles inhibits the creation of a collective mode while for \( w \gt 1 \) the YOCP behaves as weakly coupled Coulomb gas. The onset of correlations marks the upper boundary of these two domains. Similarly the onset of quasi-localization of the particles in the minima of the potential landscape create the upper boundary of the third domain. Finally, the fifth domain is identified as the crystal phase of the system. The behavior of the damping of the acoustic mode further confirmed the location of the boundaries. This work has been presented in a poster presentation at the 8th ICPDP in Prague \cite{ICPDP2017}, and it was part of an <em>invited talk</em> at the SCCS 2017 in Kiel, Germany </p>
+                    <h3>Vlasov Equation applied to Yukawa plasmas</h3>
+                    <p>One particular question arose in the previous study: is the Vlasov equation valid for the description of weakly coupled YOCP? In Ref.~\cite{Golden2018} we analyzed the Vlasov dispersion relation for Yukawa plasmas in three dimensions for the purpose of identifying coupling parameter domains where the Vlasov approach is justified and the existence of a well-developed RPA type collective excitation is allowed. We establish a rigorous lower bound for the coupling parameter, below which there can be no real solution to the Vlasov dispersion relation. In the coupling domain, where weakly damped solutions do exist, we have focused on the long-wavelength acoustic regime where we establish more restrictive estimates for the lower bound of the coupling parameter. We also derive a general formula for the corresponding acoustic phase velocity, valid over a wide range of coupling parameter/screening parameter ratios above the lower bound. In conclusion, the Vlasov approach is valid only above a critical coupling value. Comparison with MD simulations results further highlights the limitations of the Vlasov approximation.</p>
+                    <h3>Dynamics of Binary Plasma Mixtures</h3>
+                    <p><b>Antiresonances:</b> The primary quantity of interest is the matrix of partial dynamics structure factors, \( S_{AB}(k,\omega) = \langle n_A(k,\omega), n_B(k,\omega) \rangle \), where \( A,B \) indicate the particle species. Molecular Dynamics (MD) simulations showed the existence of sharp minima, or anti-resonances, at well defined frequencies in \( S_{AB}(k,\omega) \). This is a new feature not present in the OCP. The problem was approached from the theoretical side by calculating the partial linear response functions, \( \chi_{AB}(k,\omega) \). In the weakly coupled regime, the well known Random Phase Approximation (RPA) was used, while at strong coupling an extension of the Quasi-Localized Charge Approximation (QLCA) was used. Although, the QLCA has been successfull in describing the collective mode spectrum of strongly coupled plasmas, it lacked a coherent description of the damping mechanism and consequently was unable to describe the new observed feature in \( S_{AB}(k,\omega) \). I was able to show that these anti-resonances appear due to an effective drag force between the microscopic currents of the two species which causes the imaginary part of \( \chi_{AB}(k,\omega) \) to vanish at the same frequencies. The zeros of \( \textrm{Im} \chi_{AB}(k,\omega) \), by means of the Fluctuation-Dissipation Theorem, manifest themselves as minima, or anti-resonances, in \( S_{AB}(k,\omega) \).</p>
+                    <p>My calculations lead also to theoretical predictions that were later confirmed by MD simulations. The anti-resonances were identified as new characteristic frequencies of the plasma mixture <em>i.e.</em> they depend only of the charge, mass, and density of the particles. This makes them coupling (temperature) independent. MD simulations with \( \Gamma \) values well into the moderately coupled regime have confirmed this characteristic. Furthermore, although, damping is needed for their existence, they are independent of its magnitude. They are not, however, independent of the nature of damping. In the weakly coupled regime \( \Gamma \ll 1 \), where the collective modes are damped by wave-particle interaction (Landau damping), the anti-resonances are shifted to different frequencies. This distinction between weak and strong coupling makes the anti-resonances a possible tracker for the identification of the boundary between the weak and moderately coupled regime.</p>
+                    <p>Probably the most important discovery was that the anti-resonances are independent of the interaction potential, whether it being the long-range Coulomb or short-range Yukawa, making them a general feature of binary mixtures. On the experimental side, the important aspect of this phenomenon is that at these anti-resonant frequencies one of the two components is essentially inert and one can immediately obtain information about density, charge, and mass of the other species or of the negative background.</p>
+                    <p><b>Collective mode spectrum:</b>The research on plasma mixture had started with the intent to study strong coupling effects on the collective mode spectrum of the mixture. Even though the system is composed by two components, in the weakly coupled regime, there is only one mode: the well known plasmon created by the sum of the squares of the plasma frequencies of each species \( \omega_0 = \sqrt{\omega_1^2 + \omega_2^2} \). (The other well known ion-acoustic mode is entirely dependent on temperature, thus, it would not exist at \(T = 0 \), and therefore is not considered in this work). This picture is completely changed in the strong coupling regime, where there are two plasmon modes. In this case, the modes are not given by a simple relations as in \( \omega_0 \), but instead are calculated from the eigenvalues of a dynamical matrix. The first high frequency mode has been identified as the weak coupling plasmon, but shifted to higher frequencies by correlations. The second low frequency mode, instead, is a completely new mode representative of out-of-phase oscillations between the two species. In a mixture whose particles interact via the short range Yukawa we find a similar situation. At weak coupling the plasmon mode is replaced by an acoustic like mode with a sound speed proportional to \( \omega_0 \). In the strongly coupled regime we again find two modes: an acoustic and a gap mode. The strong coupling effects appear in two cases: <em>(i)</em> in the softening of the sound speed with \( \omega_0 \) replaced by \( \omega_{\textrm{vaa} } \)  a plasma frequency created by the average charge and mass of the mixture <em>(ii)</em> and in the gap frequency entirely correlational dependent.</p>
+                    <p>Preliminary results on the anti-resonance have been published in EPL \cite{Silvestri2015} and presented as an invited talk at SCCS2017 in Kiel, Germany. Further papers on the collective mode spectrum of plasma mixture are in preparation. The current project underway is to understand how the Yukawa spectrum morphs into the Coulomb one when the screening parameter \( \kappa \rightarrow 0 \).</p>
+                    <h3>Undergraduate Research</h3>
+                    <p> Under construction </p>
 
-<!-- Script to include MathJax -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Publications -->
+    <section class="page-section" id="publications">
+        <div class="container">
+            <h1 class="text-center mt-0">Publications</h1>
+            <hr class="divider my-3" />
+            <div class="row">
+                <!-- Papers and Preprints -->
+                <div class="col-lg-4 text-left">
+                    <h2 class="text-dark mt-0">Papers and Preprints</h2>
+                    <p>
+                        <em><a href=https://dx.doi.org/10.1103/PhysRevE.100.063206>
+                        Sound speed in Yukawa one-component plasmas across coupling regimes
+                        </a></em><br/>
+                        Phys. Rev. E 100, 063206 (2019)
+                        <a href="https://arxiv.org/abs/1909.03345">arXiv</a><br/>
+                        <strong>Luciano G. Silvestri</strong>, Gabor J. Kalman, Zolt&aacuten Donk&oacute,
+                        Peter Hartmann, Marlene Rosenberg, Kenneth I. Golden, and Stamatios Kyrkos
+                    </p>
+                    <p>
+                        <em><a href=https://doi.org/10.26577/phst-2017-1-117>
+                        Is the Vlasov equation valid for Yukawa plasmas
+                        </a></em><br/>
+                        Physical Sciences and Technology 4, 9-14 (2017)
+                        <a href="https://arxiv.org/abs/1806.08431">arXiv</a><br/>
+                        Kenneth I. Golden, Gabor J. Kalman, <strong>Luciano G. Silvestri</strong>
+                    </p>
+                    <p>
+                        <em><a href=https://arxiv.org/abs/1609.09029>
+                        Correlation induced out-of-phase plasmon in an electron liquid
+                        </a></em><br/>
+                        <a href="https://arxiv.org/abs/1609.09029">arXiv</a><br/>
+                        Gabor J. Kalman, Kenneth I. Golden, <strong>Luciano G. Silvestri</strong>
+                    </p>
+                    <p>
+                        <em><a href=https://dx.doi.org/10.1002/ctpp.201400098>
+                        The Dynamical Structure Function of the One-Component Plasma Revisited
+                        </a></em><br/>
+                        Contributions to Plasma Physics 5, 421-427 (2015)<br/>
+                        Ihor Korolov, Gabor J. Kalman, <strong>Luciano G. Silvestri</strong>, Zolt&aacute Donk&oacute
+                    </p>
+                    <p>
+                        <em><a href=https://dx.doi.org/10.1209/0295-5075/109/15003>
+                        Fano-like resonances in strongly coupled binary Coulomb systems
+                        </a></em><br/>
+                        EPL (Europhysics Letters) 109, 15003 (2015)
+                        <a href="https://arxiv.org/abs/1001.1661">arXiv</a><br/>
+                        <strong>Luciano Silvestri</strong>, Gabor J. Kalman, Zolt&aacuten Donk&oacute,
+                        Peter Hartmann, Hanno Kaehlert
+                    </p>
+                    <p>
+                        <em><a href=https://dx.doi.org/10.1103/PhysRevE.89.042131>
+                        Typical, finite baths as a means of exact simulation of open quantum systems
+                        </a></em><br/>
+                        Phys. Rev. E 89, 042131 (2014)
+                        <a href="https://arxiv.org/abs/0912.4052">arXiv</a><br/>
+                        <strong>Luciano Silvestri</strong>, Kurt Jacobs, Vanja Dunjko, Maxim Olshanii
+                    </p>
+                    <p>
+                        <em><a href=https://dx.doi.org/10.1103/PhysRevE.85.011141>
+                        Approach to Typicality in Many-Body Quantum Systems
+                        </a></em><br/>
+                        Phys. Rev. E 85, 011141 (2012)
+                        <a href="https://arxiv.org/abs/1112.3424">arXiv</a><br/>
+                        Shawn Dubey, <strong>Luciano Silvestri</strong>, Justin Finn, Sai Vinjanampathy,
+                        Kurt Jacobs
+                    </p>
+                </div>
+                <!-- Talks and Posters  -->
+                <div class="col-lg-4 text-left">
+                    <h2 class="text-dark mt-0">Talks and Seminars</h2>
+                    <p>
+                        <em><a href=http://www.uni-kiel.de/sccs2017/program.htmlPNP>
+                        Collective Behavior of Yukawa Systems (Invited talk)
+                        </a></em><br/>
+                        <strong>Strongly Coupled Coulomb Systems (SCCS)</strong> <br/>
+                        Jul 31 - Aug 4 2017 Kiel, Germany
+                    </p>
+                    <p>
+                        <em><a href="https://physics.mff.cuni.cz/kfpp/8icpdp/?k=0">
+                            The sound speed in Yukawa liquids across coupling regimes (Poster)
+                        </a></em>
+                        <strong>Int. Conf. on the Physics of Dusty Plasmas</strong> <br/>
+                        May 20 - 25 2017 Prague, Czech Republic
+                    </p>
+                    <p>
+                        <em><a href=http://www.pnp15.kz/>
+                        Dynamic Structure factor in strongly coupled binary ionic mixtures (Short Seminar)
+                        </a></em><br/>
+                        <strong>Physics of Non-Ideal Plasmas, (PNP)</strong> <br/>
+                        Aug 30 - Sep 4, 2015 Almaty, Kazakhstan
+                    </p>
+                    <p>
+                        <em><a href=http://meetings.aps.org/Meeting/DPP14/Content/2782>
+                        Fano-like anti-resonances in strongly coupled binary Coulomb systems (Short Seminar)
+                        </a></em><br/>
+                        <strong>APS Division of Plasma Physics</strong> <br/>
+                        Oct 27 - 31 2014 New Orleans, LA, USA
+                    </p>
+                    <p>
+                        <em><a href=http://plasma.szfki.kfki.hu/SCCS/archives.cgi>
+                        Fano-like anti-resonances in strongly coupled binary Coulomb systems (Short Seminar)
+                        </a></em><br/>
+                        <strong>Strongly Coupled Coulomb Systems (SCCS)</strong> <br/>
+                        Jul 28 - Aug 1 2014 Santa Fe, NM, USA
+                    </p>
+                </div>
+                <!-- Edited Books -->
+                <div class="col-lg-4 text-left">
+                    <h2 class="text-dark mt-0">Edited Books</h2>
+                    <p>
+                        <em><a href=https://www.springer.com/gp/book/9789402415438>
+                        Quantum Nano-Photonics
+                        </a></em><br/>
+                        Springer (2019)
+                        Baldassare Di Bartolo, <strong>Luciano G. Silvestri</strong>, Maura Cesaria, John Collins
+                    </p>
+                    <p>
+                        <em><a href=https://www.springer.com/gp/book/9789402408485>
+                        Nano-Optics: Principles Enabling Basic Research and Applications
+                        </a></em><br/>
+                        Springer (2017)
+                        Baldassare Di Bartolo, John Collins, <strong>Luciano Silvestri</strong>
+                    </p>
+                    <p>
+                        <em><a href=https://www.springer.com/gp/book/9789401791328>
+                        Nano-Structures for Optics and Photonics
+                        </a></em><br/>
+                        Springer (2015)
+                        Baldassare Di Bartolo, John Collins, <strong>Luciano Silvestri</strong>
+                    </p>
+                    <p>
+                        <em><a href=https://www.springer.com/gp/book/97894007531295>
+                        Nano-Optics for Enhancing Light-Matter Interaction on a Molecular Scale
+                        </a></em><br/>
+                        Springer (2015)
+                        Baldassare Di Bartolo, John Collins, <strong>Luciano Silvestri</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Contact</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">
+                            Dept. of Computational Science Mathematics and Engineering,<br/>
+                            Room 1510 Eng. Bldg, 428 S. Shaw Lane, East Lansing, MI 48824
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0">
+                        <a class="ai ai-orcid ai-3x mb-3 text-muted" href="https://orcid.org/0000-0003-3530-7910"></a>
+                    </div>
+                    <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0">
+                        <a class="ai ai-google-scholar ai-3x mb-3 text-muted"
+                           href="https://scholar.google.com/citations?user=XadmY6QAAAAJ&hl=en"></a>
+                    </div>
+                    <div class="col-lg-3 ml-auto text-center mb-5 mb-lg-0">
+                        <a class="ai ai-researchgate ai-3x mb-3 text-muted"
+                           href="https://www.researchgate.net/profile/Luciano_Silvestri2"></a>
+                    </div>
+                    <div class="col-lg-3 mr-auto text-center">
+                        <a class="fas fa-envelope fa-3x mb-3 text-muted"
+                           href="mailto:silves28@msu.edu"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Script to include MathJax -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 
-<!-- Script to include jQuery -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	
-<!-- Scripts to activate Abstract link -->
-<script type="text/javascript">
-<!--
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script>
-</head>
-
-<body class="content">
-  <div id="header">
-    <div id="name">
-      <h1><a href="index.html">Luciano G. Silvestri</a></h1>
-    </div>
-    <div id="logo">
-      <img src="images/Serious.jpg" name="Serious" width="100" height="75"/>
-    </div>
-    <ul id="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="current" href="research.html">Research</a></li>
-    </ul>
-  </div>
-  
-  <div class="left">
-    <h2>Research</h2>
-    <p>My current research interests lie in the dynamics of Strongly Coupled Plasmas (SCPs), i.e. systems whose dynamics is governed by particle correlations rather than their free motion. To be precise, the coupling parameter, denoted by \( \Gamma \), is defined as the ratio of average potential energy, \( \propto e^2(N/V)^{1/3} \), over the kinetic energy, \( k_BT \). Some examples of SCPs are the core of white dwarfs, the outer crust and ocean of neutron stars, and the center of giant planets. The large densities and relatively low temperatures of these systems lead to \( \Gamma \gg 1 \). At the same time we can create SCPs also in the laboratory. Trapped Ions at ultracold temperatures (Ultracold Neutral Plasmas, UNPs) and Complex "Dusty" Plasmas are some examples. The large \( \Gamma \) is due to the very low temperatures in the case of UNPs or due to the large charge carried by the dust particles in the latter case.</p>
-    <p> On the theoretical side these systems are modeled as One component Plasmas (OCPs) where the role of the negative electrons is reduced to providing a neutralizing background. SCPs found in the Universe, however, are instead composed of multiple species of positively charged ions immersed in a neutralizing background. There are, however situations of physical importance, where the OCP description is inadequate and a genuine two component description of a plasma composed of electrons and ions is required. Within the simple time honored cold plasma and Vlasov plasma models there is an abundance of works on such systems in the literature. A more sophisticated approach on correlated electron-ion systems has been followed in recent works, especially in relation to the so-called Warm Dense Matter. Furthermore, in a large class of physical systems multicomponent behavior arises because there are two or more components of like charges (all the \( Z_A \)-s being of the same signature) in a neutralizing background, whose behavior is not well described in terms of an extended OCP-like or YOCP-like model. Such systems exhibit novel physical effects, which have no equivalent in OCP or YOCP systems.</p>
-    <h3>Dynamical Structure Factor of One Component Plasma (OCP) Revisited </h3>
-    <p>Even though my thesis project focused on plasma mixtures, I was also involved in different projects on the OCP. The fast computational resources of today allowed us to create a large set of simulations of the OCP and thus expand on the pioneering work of previous researchers. In Ref.~\cite{Korolov2015} we presented high precision MD simulations for the dynamical structure function, \( S(k,\omega) \), of the classical Coulomb OCP, for a wide range of the coupling parameter. We showed the positive-to-negative transition of the slope of the \( \omega(k) \) dispersion curve at small wave numbers caused by the onset of correlations with increasing coupling. The high signal-to-noise ratio of the data over several orders of magnitude allowed examination of a wide dynamical range of \( S(k,\omega) \), including extreme values of \( \omega \) and \( k \), and the identification of waves at higher harmonics of the plasma frequency.</p>
-    <h3>Correlation Induced Second Plasmon in an Electron Liquid</h3>
-    <p>A particular interesting project that emerged from my thesis was to apply the extended QLCA to a strongly coupled electron liquid. This system can be considered to be composed by two components with different spins, but equal charge and mass. In addition to the well known high frequency plasmon mode, such a binary system, in the strongly coupled phase, supports a second plasmon mode at a low non-zero frequency. This excitation is maintained by the out-of-phase oscillations of the spin-up and spin-down densities of the electron liquid, but governed solely by the Coulomb interaction between the particles. The frequency square of this mode is proportional to the overlap \( (r=0 ) \) (absolute) value of the spin-up/spin-down correlation function, and thus slightly affected by the degree of polarization of the electron liquid. From its dispersion and its satisfaction of the 3rd frequency sum rule we identified it with the conjectured magnetic excitation in the homogeneous electron gas. We estimated the spectral weight of the mode, based on the assumption that interspecies viscous spin drag is the main mechanism for damping in the strongly coupled domain. The spectral weight is manifest in the partial spin-resolved dynamical structure functions and it is proportional to the product of the densities of the two spin components. An independent derivation based on a generalized Feynman ansatz was used to corroborate our result.</p>
-    <h3>Yukawa One Component Plasma</h3>
-    <p>The work on OCP has also been extended to a Yukawa OCP (YOCP). The defining parameters of the YOCP are the inverse screening length, \( \kappa \), and coupling parameter \( \Gamma \). The YOCP collective mode spectrum is characterized by an acoustic mode with a linear dispersion at long wavelength, \( \omega(k) \propto sk \), \( s \) the sound speed. This work aimed at describing the behavior of the sound speed and damping of the oscillations across a wide range of parameter regimes: from a weakly coupled Coulomb gas to a crystalline phase. A major result of this work was the identification of five different domains in the \( \Gamma - \kappa \) parameter space in which the physical behavior of the YOCP exhibits different features. In the weak coupling regime, \( \Gamma \lt 1 \), a third parameter  \( w \) -- the ratio between the wave's phase velocity and the thermal speed of the particles -- divides the phase space in two: for \( w \lt 1 \) the thermal motion of the particles inhibits the creation of a collective mode while for \( w \gt 1 \) the YOCP behaves as weakly coupled Coulomb gas. The onset of correlations marks the upper boundary of these two domains. Similarly the onset of quasi-localization of the particles in the minima of the potential landscape create the upper boundary of the third domain. Finally, the fifth domain is identified as the crystal phase of the system. The behavior of the damping of the acoustic mode further confirmed the location of the boundaries. This work has been presented in a poster presentation at the 8th ICPDP in Prague \cite{ICPDP2017}, and it was part of an <em>invited talk</em> at the SCCS 2017 in Kiel, Germany </p>
-    <h3>Vlasov Equation applied to Yukawa plasmas</h3>
-    <p>One particular question arose in the previous study: is the Vlasov equation valid for the description of weakly coupled YOCP? In Ref.~\cite{Golden2018} we analyzed the Vlasov dispersion relation for Yukawa plasmas in three dimensions for the purpose of identifying coupling parameter domains where the Vlasov approach is justified and the existence of a well-developed RPA type collective excitation is allowed. We establish a rigorous lower bound for the coupling parameter, below which there can be no real solution to the Vlasov dispersion relation. In the coupling domain, where weakly damped solutions do exist, we have focused on the long-wavelength acoustic regime where we establish more restrictive estimates for the lower bound of the coupling parameter. We also derive a general formula for the corresponding acoustic phase velocity, valid over a wide range of coupling parameter/screening parameter ratios above the lower bound. In conclusion, the Vlasov approach is valid only above a critical coupling value. Comparison with MD simulations results further highlights the limitations of the Vlasov approximation.</p>		
-    <h3>Dynamics of Binary Plasma Mixtures</h3>
-    <p><b>Antiresonances:</b> The primary quantity of interest is the matrix of partial dynamics structure factors, \( S_{AB}(k,\omega) = \langle n_A(k,\omega), n_B(k,\omega) \rangle \), where \( A,B \) indicate the particle species. Molecular Dynamics (MD) simulations showed the existence of sharp minima, or anti-resonances, at well defined frequencies in \( S_{AB}(k,\omega) \). This is a new feature not present in the OCP. The problem was approached from the theoretical side by calculating the partial linear response functions, \( \chi_{AB}(k,\omega) \). In the weakly coupled regime, the well known Random Phase Approximation (RPA) was used, while at strong coupling an extension of the Quasi-Localized Charge Approximation (QLCA) was used. Although, the QLCA has been successfull in describing the collective mode spectrum of strongly coupled plasmas, it lacked a coherent description of the damping mechanism and consequently was unable to describe the new observed feature in \( S_{AB}(k,\omega) \). I was able to show that these anti-resonances appear due to an effective drag force between the microscopic currents of the two species which causes the imaginary part of \( \chi_{AB}(k,\omega) \) to vanish at the same frequencies. The zeros of \( \textrm{Im} \chi_{AB}(k,\omega) \), by means of the Fluctuation-Dissipation Theorem, manifest themselves as minima, or anti-resonances, in \( S_{AB}(k,\omega) \).</p>
-    <p>My calculations lead also to theoretical predictions that were later confirmed by MD simulations. The anti-resonances were identified as new characteristic frequencies of the plasma mixture <em>i.e.</em> they depend only of the charge, mass, and density of the particles. This makes them coupling (temperature) independent. MD simulations with \( \Gamma \) values well into the moderately coupled regime have confirmed this characteristic. Furthermore, although, damping is needed for their existence, they are independent of its magnitude. They are not, however, independent of the nature of damping. In the weakly coupled regime \( \Gamma \ll 1 \), where the collective modes are damped by wave-particle interaction (Landau damping), the anti-resonances are shifted to different frequencies. This distinction between weak and strong coupling makes the anti-resonances a possible tracker for the identification of the boundary between the weak and moderately coupled regime.</p>
-    <p>Probably the most important discovery was that the anti-resonances are independent of the interaction potential, whether it being the long-range Coulomb or short-range Yukawa, making them a general feature of binary mixtures. On the experimental side, the important aspect of this phenomenon is that at these anti-resonant frequencies one of the two components is essentially inert and one can immediately obtain information about density, charge, and mass of the other species or of the negative background.</p>
-    <p><b>Collective mode spectrum:</b>The research on plasma mixture had started with the intent to study strong coupling effects on the collective mode spectrum of the mixture. Even though the system is composed by two components, in the weakly coupled regime, there is only one mode: the well known plasmon created by the sum of the squares of the plasma frequencies of each species \( \omega_0 = \sqrt{\omega_1^2 + \omega_2^2} \). (The other well known ion-acoustic mode is entirely dependent on temperature, thus, it would not exist at \(T = 0 \), and therefore is not considered in this work). This picture is completely changed in the strong coupling regime, where there are two plasmon modes. In this case, the modes are not given by a simple relations as in \( \omega_0 \), but instead are calculated from the eigenvalues of a dynamical matrix. The first high frequency mode has been identified as the weak coupling plasmon, but shifted to higher frequencies by correlations. The second low frequency mode, instead, is a completely new mode representative of out-of-phase oscillations between the two species. In a mixture whose particles interact via the short range Yukawa we find a similar situation. At weak coupling the plasmon mode is replaced by an acoustic like mode with a sound speed proportional to \( \omega_0 \). In the strongly coupled regime we again find two modes: an acoustic and a gap mode. The strong coupling effects appear in two cases: <em>(i)</em> in the softening of the sound speed with \( \omega_0 \) replaced by \( \omega_{\textrm{vaa} } \)  a plasma frequency created by the average charge and mass of the mixture <em>(ii)</em> and in the gap frequency entirely correlational dependent.</p>
-    <p>Preliminary results on the anti-resonance have been published in EPL \cite{Silvestri2015} and presented as an invited talk at SCCS2017 in Kiel, Germany. Further papers on the collective mode spectrum of plasma mixture are in preparation. The current project underway is to understand how the Yukawa spectrum morphs into the Coulomb one when the screening parameter \( \kappa \rightarrow 0 \).</p>
-    <h3>Undergraduate Research</h3>
-    <p> Under construction </p>
-  </div>
 </body>
 </html>
