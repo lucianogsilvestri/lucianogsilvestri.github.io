@@ -19,6 +19,9 @@
   --orange: #f4623a;
   --yellow: #ffc107;
   --green: #28a745;
+  --msugreen: #18453b;
+  --msulightorange: #f08521;
+  --msulightgrey: #97a2a2;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -6067,7 +6070,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  background-color: #18453b !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6077,13 +6080,23 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #f08521 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #545b62 !important;
+  background-color: #cb5a28 !important;
+}
+
+.bg-ternary {
+  background-color: #97a2a2 !important;
+}
+
+a.bg-ternary:hover, a.bg-ternary:focus,
+button.bg-ternary:hover,
+button.bg-ternary:focus {
+  background-color: #535054 !important;
 }
 
 .bg-success {
@@ -9959,11 +9972,12 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color: #18453b;
 }
 
 hr.light {
-  border-color: #fff;
+  /*border-color: #fff;*/
+  border-color: #f08521;
 }
 
 .btn {
@@ -10086,6 +10100,38 @@ header.masthead h1 {
   }
 }
 
+header.masthead_research {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: url("../assets/img/NeutronStarMerger_Shot1_4KStill7_v01_credit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead_research h1 {
+  font-size: 2.25rem;
+  font-family: "Acme", sans-serif;
+}
+@media (min-width: 992px) {
+  header.masthead_research {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead_research p {
+    font-size: 1.15rem;
+  }
+  header.masthead_research h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead_research h1 {
+    font-size: 3.5rem;
+  }
+}
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
 }
